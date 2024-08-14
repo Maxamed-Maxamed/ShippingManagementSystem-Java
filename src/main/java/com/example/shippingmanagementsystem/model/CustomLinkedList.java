@@ -51,29 +51,21 @@ public class CustomLinkedList<T> {
 
     // Additional methods
     // toString method
-   /**
-    * The `toString` method in Java is used to create a string representation of a linked list by
-    * iterating through the nodes and appending their data to a StringBuilder.
-    * 
-    * @return The `toString()` method is being overridden to return a string representation of the
-    * linked list. The method iterates through the linked list and appends each element to a
-    * `StringBuilder` along with commas to separate the elements. The final string is enclosed in
-    * square brackets `[ ]` and returned.
-    */
+  
     @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("[");
-        Node<T> current = head;
-        while (current != null) {
-            sb.append(current.data);
-            if (current.next != null) {
-                sb.append(", ");
-            }
-            current = current.next;
+public String toString() {
+    StringBuilder sb = new StringBuilder(); // This makes a new StringBuilder to build the string
+    sb.append("["); // Start the string with a [
+    Node<T> current = head; // Start at the head of the list
+    while (current != null) { // While there are still nodes in the list
+        sb.append(current.data); // Add the data from the current node to the string
+        if (current.next != null) { // If there is another node after this one
+            sb.append(", "); // Add a comma and a space
         }
-        sb.append("]");
-        return sb.toString();
+        current = current.next; // Move to the next node
     }
+    sb.append("]"); // End the string with a ]
+    return sb.toString(); // Return the string we built
+}
 
 }
