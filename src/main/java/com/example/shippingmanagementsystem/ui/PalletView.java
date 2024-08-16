@@ -1,6 +1,7 @@
 package com.example.shippingmanagementsystem.ui;
 
 import com.example.shippingmanagementsystem.model.ShippingManagementSystem;
+import javafx.event.ActionEvent;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -51,5 +52,9 @@ public class PalletView {
         Scene scene = new Scene(vbox, 300, 250);
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void handleAddPallet(ActionEvent actionEvent) {
+        show();
     }
 }

@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.shippingmanagementsystem.ui.ShipView"
-            prefHeight="400.0" prefWidth="600.0" >
-
-</AnchorPane>
+<VBox prefHeight="176.0" prefWidth="272.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.example.shippingmanagementsystem.ui.ShipView">
+    <TextField fx:id="txtName" promptText="Ship Name" />
+    <TextField fx:id="txtIdentifier" promptText="Ship Identifier" />
+    <TextField fx:id="txtFlagState" promptText="Flag State" />
+    <TextField fx:id="txtPhotoURL" promptText="Photo URL" />
+    <Button onAction="#show" text="Add Ship" />
+</VBox>

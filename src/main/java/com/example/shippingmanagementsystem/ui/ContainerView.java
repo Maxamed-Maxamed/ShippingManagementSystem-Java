@@ -1,6 +1,7 @@
 package com.example.shippingmanagementsystem.ui;
 
 
+import javafx.event.ActionEvent;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -40,5 +41,9 @@ public class ContainerView {
         Scene scene = new Scene(vbox, 300, 150);
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void handleAddContainer(ActionEvent actionEvent) {
+        show();
     }
 }

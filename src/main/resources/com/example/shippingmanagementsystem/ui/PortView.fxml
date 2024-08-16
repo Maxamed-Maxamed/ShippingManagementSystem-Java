@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.shippingmanagementsystem.ui.PortView"
-            prefHeight="400.0" prefWidth="600.0" >
-
-</AnchorPane>
+<VBox prefHeight="193.0" prefWidth="310.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.example.shippingmanagementsystem.ui.PortView">
+    <TextField fx:id="txtName" promptText="Port Name" />
+    <TextField fx:id="txtCode" promptText="Port Code" />
+    <TextField fx:id="txtCountry" promptText="Country" />
+    <Button onAction="#handleAddPort" text="Add Port" />
+</VBox>

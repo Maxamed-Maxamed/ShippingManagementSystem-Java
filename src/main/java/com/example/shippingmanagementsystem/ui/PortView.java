@@ -1,6 +1,7 @@
 package com.example.shippingmanagementsystem.ui;
 
 import com.example.shippingmanagementsystem.model.ShippingManagementSystem;
+import javafx.event.ActionEvent;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -44,5 +45,12 @@ public class PortView {
         stage.setScene(scene);
         stage.show();
     }
+
+    public void handleAddPort(ActionEvent actionEvent) {
+        show();
+    }
+
+
+
 
 }

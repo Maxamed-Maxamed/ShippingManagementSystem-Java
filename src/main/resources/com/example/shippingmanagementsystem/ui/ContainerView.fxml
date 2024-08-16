@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.shippingmanagementsystem.ui.ContainerView"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.shippingmanagementsystem.ui.ContainerView">
+    <TextField fx:id="txtNumber" promptText="Container Number"/>
+    <TextField fx:id="txtSize" promptText="Container Size (10, 20, or 40 feet)"/>
+    <Button text="Add Container" onAction="#handleAddContainer"/>
+</VBox>
